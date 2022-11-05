@@ -17,6 +17,8 @@ const HomeView = () => {
     { id: 3, name: "Modern Black Blouse", category: "Fashion", price: "$35", rating: 5, img: "https://images.pexels.com/photos/4390579/pexels-photo-4390579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" }
   ])
 
+  window.top.document.title = 'Fixxo.'
+
   return (
     <>
       <MainMenuSection />
