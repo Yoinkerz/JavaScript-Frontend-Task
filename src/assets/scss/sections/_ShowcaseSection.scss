@@ -1,0 +1,27 @@
+.showcase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .img-left {
+        margin-left: -120px;
+    }
+    .img-right {
+        margin-right: -120px;
+    }
+
+    .showcase-body {
+        text-align: center;
+
+        h1 {
+            font-size: 65px;
+            font-weight: 800;
+        }
+
+        p {
+            margin-top: 50px;
+            margin-bottom: 35px;
+            font-size: 20px;
+        }
+    }
+}
