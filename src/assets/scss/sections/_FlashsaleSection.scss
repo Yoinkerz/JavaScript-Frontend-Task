@@ -1,0 +1,116 @@
+.flashsale {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+
+    .card {
+        border: none;
+
+        .card-img,
+        img {
+            display: grid;
+            position: relative;
+            height: 210px;
+            width: 255px;
+            
+        }
+
+        .card-menu {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: block;
+
+            .menu-link {
+                background-color: $color-white;
+                color: $color-dark;
+                width: 36px;
+                height: 36px;
+                margin-bottom: 15px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 0 6px 4px $color-shadow;
+                position: relative;
+                border: none;
+                outline: none;
+
+                &:hover {
+                    color: $color-white;
+                    background-color: $color-dark;
+                    text-decoration: none;
+                }
+            }
+        }
+        
+        .btn-card-theme {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 50px;
+        }
+
+        &:hover {
+            .card-menu {
+                display: block !important;
+            }
+            .btn-card-theme {
+                display: flex !important;
+            }
+        }
+    }
+
+    .card-body {
+        text-align: center;
+        margin-top: 55px;
+
+        .card-category {
+            font-size: 13px;
+            font-weight: 500;
+            color: $color-darkgray;
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .card-rating {
+            color: $color-theme;
+        }
+
+        .card-price {
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+
+   
+
+}
+
+.flashsales-box {
+    background-color: $color-gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flashsales-title {
+    font-size: 45px;
+    font-weight: 600;
+    color: $color-white;
+    margin-bottom: 40px;
+}
+
+.flashsales-body {
+    text-align: center;
+    width: 50%;
+}
+
