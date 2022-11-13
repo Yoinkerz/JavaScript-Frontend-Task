@@ -2,12 +2,17 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import ProductCard from '../components/ProductCard'
 
-const FlashSaleSection = ({items = []}) => {
+const FlashsaleSectionFlipped = ({items = []}) => {
   return (
-    <section className='flashsale container'>
+    <section className='flashsale-flipped container'>
+        <div className="row row-cols-1 row-cols-md-2">
+            {
+            items.map( product => <ProductCard key={product.articleNumber} item={product} />)
+            }
+        </div>
         <div className="flashsales-box">
             <div className="flashsales-body">
-                <h1 className="flashsales-title">2 FOR USD $29</h1>
+                <h1 className="flashsales-title">2 FOR USD $49</h1>
                 <NavLink to={`/products`} className="btn-theme">
                 <span className="corner-left"></span>
                 FLASH SALE
@@ -15,13 +20,8 @@ const FlashSaleSection = ({items = []}) => {
                 </NavLink>
             </div>
         </div>
-            <div className="row row-cols-1 row-cols-md-2">
-                {
-                  items.map( product => <ProductCard key={product.articleNumber} item={product} />)
-                }
-            </div>
     </section>
   )
 }
 
-export default FlashSaleSection
+export default FlashsaleSectionFlipped

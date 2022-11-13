@@ -1,0 +1,62 @@
+.banners {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .banner-left {
+        position: relative;
+        margin-right: 10px;
+
+        img {
+            width: 100%;
+            height: 400px;
+        }
+
+        h1 {
+            color: $color-white;
+            font-weight: 600;
+        }
+
+        .text-left {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+        }
+
+        .button-left {
+            position: relative;
+            bottom: 30%;
+            left: 50%;
+        }
+
+       
+
+    }
+
+    .banner-right {
+        position: relative;
+        margin-left: 10px;
+
+        img {
+            width: 100%;
+            height: 400px;
+        }
+
+        h1 {
+            color: $color-white;
+            font-weight: 600;
+        }
+
+        .text-right {
+            position: absolute;
+            top: 30%;
+            left: 10%;
+        }
+
+        .button-right {
+            position: relative;
+            bottom: 30%;
+            left: 10%;
+        }
+
+    }
+}

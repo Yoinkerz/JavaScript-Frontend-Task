@@ -1,0 +1,34 @@
+.policyinfo {
+    .policies {
+        margin-top: 75px;
+        margin-bottom: 70px;
+        border-top: 1px solid $color-gray;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        .support,
+        .secured-payment,
+        .home-delivery,
+        .returns {
+            margin-top: 65px;
+            margin-left: 110px;
+            display: block;
+            text-align: center;
+
+            h2 {
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+            }
+
+            p {
+                display: flex;
+                justify-content: center;
+                font-size: 14px;
+                margin-bottom: 0;
+            }
+        } 
+    }
+}
